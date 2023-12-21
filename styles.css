@@ -1,0 +1,168 @@
+body {
+	background: white;
+	box-sizing: border-box;
+	font-family: 'Playfair Display', serif;
+	padding: 0px;
+	margin: 0px;
+	color: black;
+}
+
+main {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background: #d1d1cb;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+h1 {
+	font-size: 3rem;
+	}
+	
+h2 {
+	font-size: 2rem;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}	
+
+/*page navigation*/
+#navbar {
+  background-color: #303c40;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  }
+ 
+.nav-items {
+ display: flex;
+ justify-content: flex-end;
+ margin-right: 15px;
+}
+
+li {
+  list-style-type: none;
+  margin: 10px;
+  
+}
+.nav-items a {
+	text-decoration: none;
+    color: white;
+	padding: 10px;
+	} 
+
+
+.nav-items a:hover {
+  cursor: pointer;
+  }
+
+/*main part*/
+
+section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* introduction */
+
+#welcome-section p {
+  margin-bottom: 40px;		
+}
+
+.first-part {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.first-part-text {
+	margin-right: 20px;
+	flex-shrink: 1;
+	flex-basis: 560px;
+}
+
+.first-part img {
+	flex-shrink: 1;
+}
+
+.first-part p {
+	text-align: justify;
+	font-size: 1.2rem;
+	text-indent: 50px;
+}
+	
+	/*education part*/
+.middle-part {
+	clear: both;
+	background-color: #303c40;
+	color: white;
+}	
+	
+.education{
+	display: flex;
+	justify-content: space-evenly;
+	padding: 10px;
+	flex-wrap: wrap;
+	gap: 10px;
+	}
+	
+.education-part {
+	border: 2px solid white;
+	border-radius: 10px;
+	flex-shrink: 1;
+	flex-basis: 300px;
+	}
+	
+.education-part li {
+	text-align: left;
+}	
+	
+ /*projects in pictures*/
+ 
+ #projects {
+
+   display: grid;
+   grid-template-columns: auto auto auto auto;
+   grid-gap: 10px;
+ }
+ 
+ .project-tile img {
+    border: 5px solid grey;
+}
+ /*footer area*/
+ 
+ footer {
+	width: 100%;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+
+ 
+ .contact-links {
+	 display: flex;
+	 justify-content: center;
+ }
+
+/*Media Query*/
+
+@media (max-width: 500px) {
+
+	
+.nav-items {
+    display: flex;
+	flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+	gap: 20px;
+	
+  }
+
+  #projects{ grid-template-columns: 1fr; }
+ }
+ 
+ .project-intro {
+	 padding-top: 60px;
+	 
+ }
